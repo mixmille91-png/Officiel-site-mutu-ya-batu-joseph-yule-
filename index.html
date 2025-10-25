@@ -1,242 +1,688 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Joseph Yule – Engagement RDC</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honorable Joseph Yule Mutu ya Batu - Député Provincial de la Tshopo</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE2IDBDNy4xNjM0NCAwIDAgNy4xNjM0NCAwIDE2QzAgMjQuODM2NiA3LjE2MzQ0IDMyIDE2IDMyQzI0LjgzNjYgMzIgMzIgMjQuODM2NiAzMiAxNkMzMiA3LjE2MzQ0IDI0LjgzNjYgMCAxNiAwWk0xNiAyOC4xNkM5LjM3MTIgMjguMTYgNCAyMi43ODg4IDQgMTZDNCA5LjIxMTIgOS4zNzEyIDMuODQgMTYgMy44NEMyMi42Mjg4IDMuODQgMjggOS4yMTEyIDI4IDE2QzI4IDIyLjc4ODggMjIuNjI4OCAyOC4xNiAxNiAyOC4xNloiIGZpbGw9IiMxYTRkMmUiLz4KPHBhdGggZD0iTTIwLjQ4IDEwLjI0SDExLjUyVjIxLjc2SDIwLjQ4VjEyLjhoLTMuMlYxOS4zNkgxNC43MlYxMi44SDIwLjQ4VjEwLjI0WiIgZmlsbD0iIzFhNGQyZSIvPgo8L3N2Zz4K">
+    <style>
+        /* Variables CSS */
+        :root {
+            --primary-color: #1a4d2e;
+            --secondary-color: #4a7c59;
+            --accent-color: #ffd166;
+            --text-color: #333;
+            --light-color: #f8f9fa;
+            --dark-color: #1d1d1d;
+            --spacing-sm: 0.5rem;
+            --spacing-md: 1rem;
+            --spacing-lg: 2rem;
+            --spacing-xl: 4rem;
+            --border-radius: 4px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
 
-  <!-- Polices Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lora&family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet" />
+        /* Reset et styles de base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  <style>
-:root {
-      --primary-color: #0055a5;
-      --accent-color: #ffcc00;
-      --overlay: rgba(0, 0, 0, 0.5);
-}
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
 
-    html {
-      scroll-behavior: smooth;
-}
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-color);
+        }
 
-    body {
-      margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      color: #333;
-}
+        h1, h2, h3, h4 {
+            margin-bottom: var(--spacing-md);
+            line-height: 1.2;
+            color: var(--primary-color);
+        }
 
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: #003d7a;
-      display: flex;
-      justify-content: center;
-      padding: 15px 0;
-      z-index: 1000;
-}
+        p {
+            margin-bottom: var(--spacing-md);
+        }
 
-    nav a {
-      color: white;
-      margin: 0 20px;
-      text-decoration: none;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: bold;
-      transition: color 0.3s;
-}
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
 
-    nav a:hover {
-      color: var(--accent-color);
-}
+        ul {
+            list-style: none;
+        }
 
-    header {
-      height: 100vh;
-      background: url('https://lh3.googleusercontent.com/pw/AP1GczPP4cCIcWwSnDfaQAwfIVvaEM8IxV0gl8gRg7BFNDviwhZ3sK8AlOIjRCKPgM5dwD9PGimDl-b23u3TuBJPn9orf1oiqx4jZ3gikaoAeBotsRYbbqQ=w108-h72-no') center/cover no-repeat;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-      position: relative;
-      overflow: hidden;
-}
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
 
-    header::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: var(--overlay);
-      z-index: 1;
-}
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
 
-    header h1, header p {
-      z-index: 2;
-      margin: 0;
-}
+        .section {
+            padding: var(--spacing-xl) 0;
+        }
 
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3em;
-      animation: zoomIn 2s ease-out;
-}
+        .section-title {
+            text-align: center;
+            margin-bottom: var(--spacing-lg);
+            position: relative;
+        }
 
-    header p {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1.2em;
-      margin-top: 10px;
-}
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent-color);
+            margin: var(--spacing-sm) auto;
+        }
 
-    @keyframes zoomIn {
-      0% { transform: scale(1.2); opacity: 0;}
-      100% { transform: scale(1); opacity: 1;}
-}
+        .btn {
+            display: inline-block;
+            padding: var(--spacing-sm) var(--spacing-lg);
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 600;
+            text-align: center;
+        }
 
-    section {
-      padding: 80px 20px;
-      max-width: 1000px;
-      margin: auto;
-      opacity: 0;
-      transform: translateY(30px);
-      animation: slideUp 1s ease-out forwards;
-}
+        .btn:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+            box-shadow: var(--box-shadow);
+        }
 
-    section h2 {
-      font-family: 'Lora', serif;
-      font-size: 2em;
-      color: var(--primary-color);
-      margin-bottom: 20px;
-}
+        /* Header et Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            transition: var(--transition);
+        }
 
-    @keyframes slideUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-}
-}
+        header.scrolled {
+            background-color: rgba(255, 255, 255, 0.98);
+            padding: 0.5rem 0;
+        }
 
-.gallery img {
-      width: 100%;
-      max-width: 300px;
-      margin: 10px;
-      border-radius: 8px;
-      transition: transform 0.5s ease;
-}
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--spacing-md) 0;
+        }
 
-.gallery img:hover {
-      transform: scale(1.05);
-}
+        .logo {
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
 
-    video {
-      width: 100%;
-      max-width: 600px;
-      margin: 20px auto;
-      display: block;
-      border-radius: 8px;
-}
+        .logo img {
+            height: 50px;
+            margin-right: var(--spacing-sm);
+        }
 
-    form {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      max-width: 600px;
-      margin: auto;
-}
+        .nav-menu {
+            display: flex;
+        }
 
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-family: 'Open Sans', sans-serif;
-}
+        .nav-menu li {
+            margin-left: var(--spacing-lg);
+        }
 
-    button {
-      background-color: #0055a5;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 4px;
-      font-weight: bold;
-      cursor: pointer;
-      margin-top: 10px;
-}
+        .nav-menu a {
+            font-weight: 600;
+            position: relative;
+        }
 
-    button:hover {
-background-color: #003d7a;
-}
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-color);
+            transition: var(--transition);
+        }
 
-.social {
-      text-align: center;
-      margin-top: 40px;
-}
+        .nav-menu a:hover::after,
+        .nav-menu a.active::after {
+            width: 100%;
+        }
 
-.social a {
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
-      color: #0055a5;
-}
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
 
-    footer {
-      background-color: var(--primary-color);
-      color: white;
-      text-align: center;
-      padding: 20px;
-}
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: var(--primary-color);
+            margin: 5px;
+            transition: var(--transition);
+        }
 
-    [id]::before {
-      content: "";
-      display: block;
-      height: 80px;
-      margin-top: -80px;
-      visibility: hidden;
-}
-  </style>
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1926&q=80') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: var(--spacing-lg);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: var(--spacing-md);
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: var(--spacing-lg);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        /* À Propos Section */
+        .about {
+            background-color: white;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-lg);
+            align-items: center;
+        }
+
+        .about-image {
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            transition: var(--transition);
+        }
+
+        .about-image:hover img {
+            transform: scale(1.03);
+        }
+
+        .about-text h2 {
+            margin-bottom: var(--spacing-md);
+        }
+
+        /* Activités Section */
+        .activities {
+            background-color: #f8f9fa;
+        }
+
+        .activities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+        }
+
+        .activity-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+
+        .activity-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .activity-image {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .activity-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .activity-card:hover .activity-image img {
+            transform: scale(1.1);
+        }
+
+        .activity-content {
+            padding: var(--spacing-lg);
+        }
+
+        /* Galerie Section */
+        .gallery {
+            background-color: white;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: var(--spacing-md);
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            aspect-ratio: 1;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-overlay i {
+            color: white;
+            font-size: 2rem;
+        }
+
+        /* Lightbox */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+        }
+
+        .lightbox.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+            position: relative;
+        }
+
+        .lightbox-content img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        .lightbox-prev {
+            left: 20px;
+        }
+
+        .lightbox-next {
+            right: 20px;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #f8f9fa;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-lg);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--spacing-md);
+        }
+
+        .contact-icon {
+            background-color: var(--primary-color);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-form {
+            background-color: white;
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .form-group {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: var(--spacing-sm);
+            font-weight: 600;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: var(--spacing-sm);
+            border: 1px solid #ddd;
+            border-radius: var(--border-radius);
+            font-family: inherit;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px rgba(26, 77, 46, 0.2);
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: var(--spacing-xl) 0 var(--spacing-md);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .footer-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: var(--spacing-md);
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-logo img {
+            height: 40px;
+            margin-right: var(--spacing-sm);
+        }
+
+        .footer-links h3,
+        .footer-contact h3 {
+            margin-bottom: var(--spacing-md);
+            color: var(--accent-color);
+        }
+
+        .footer-links ul li {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .footer-contact p {
+            margin-bottom: var(--spacing-sm);
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-contact i {
+            margin-right: var(--spacing-sm);
+            color: var(--accent-color);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: var(--spacing-md);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .social-links {
+            display: flex;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-md);
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-3px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                right: -100%;
+                width: 80%;
+                height: calc(100vh - 80px);
+                background-color: white;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                padding-top: var(--spacing-xl);
+                transition: var(--transition);
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-menu.active {
+                right: 0;
+            }
+
+            .nav-menu li {
+                margin: 0 0 var(--spacing-lg) 0;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .about-content,
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .activities-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+
+            .hamburger.active div:nth-child(1) {
+                transform: rotate(-45deg) translate(-5px, 6px);
+            }
+
+            .hamburger.active div:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger.active div:nth-child(3) {
+                transform: rotate(45deg) translate(-5px, -6px);
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI1IDBDMTEuMTkyOSAwIDAgMTEuMTkyOSAwIDI1QzAgMzguODA3MSAxMS4xOTI5IDUwIDI1IDUwQzM4LjgwNzEgNTAgNTAgMzguODA3MSA1MCAyNUM1MCAxMS4xOTI5IDM4LjgwNzEgMCAyNSAwWk0yNSA0NEMxMy45NzIgNDQgNSAzNS4wMjggNSAyNUM1IDEyLjk3MiAxMy45NzIgNCAyNSA0QzM2LjAyOCA0IDQ1IDEyLjk3MiA0NSAyNEM0NSAzNS4wMjggMzYuMDI4IDQ0IDI1IDQ0WiIgZmlsbD0iIzFhNGQyZSIvPgo8cGF0aCBkPSJNMzIgMTZIMThWMzRIMzJWMjBIMjVWMzBIMjBWMjBIMjhWMTZaIiBmaWxsPSIjMWE0ZDJlIi8+Cjwvc3ZnPgo=" alt="Logo">
+                <span>Joseph Yule Mutu ya Batu</span>
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                    <li><a href="#apropos" class="nav-link">À Propos</a></li>
+                    <li><a href="#activites" class="nav-link">Activités</a></li>
+                    <li><a href="#galerie" class="nav-link">Galerie</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-  <nav>
-    <a href="#accueil">Accueil</a>
-    <a href="#actions">Actions</a>
-    <a href="#galerie">Galerie</a>
-    <a href="#videos">Vidéos</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>Honorable Joseph Yule Mutu ya Batu</h1>
+            <p>Député Provincial de la Tshopo - République Démocratique du Congo</p>
+            <p>Servir avec intégrité, travailler pour le développement</p>
+            <a href="#apropos" class="btn">En savoir plus</a>
+        </div>
+    </section>
 
-  <header id="accueil">
-    <h1>Joseph Yule</h1>
-    <p>Un leader engagé pour la République Démocratique du Congo</p>
-  </header>
+    <!-- À Propos Section -->
+    <section id="apropos" class="section about">
+        <div class="container">
+            <h2 class="section-title">À Propos</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <!-- Photo de profil officielle -->
+                    <img src="https://photos.app.goo.gl/fnwojgqqauJLDQNj7" alt="Honorable Joseph Yule Mutu ya Batu - Député Provincial de la Tshopo">
+                </div>
+                <div class="about-text">
+                    <h2>Biographie</h2>
+                    <p>L'Honorable Joseph Yule Mutu ya Batu est un acteur politique engagé, actuellement Député Provincial de la Tshopo en République Démocratique du Congo. Son parcours est marqué par un dévouement constant au service de sa communauté et de sa province.</p>
+                    <p>Élu pour représenter les intérêts de la population de la Tshopo, il s'engage résolument dans la promotion du développement socio-économique, l'amélioration des conditions de vie des citoyens et la défense des valeurs démocratiques.</p>
+                    <p>Son action politique se fonde sur les principes de transparence, d'intégrité et de proximité avec les populations qu'il représente.</p>
+                    <a href="#contact" class="btn">Prendre contact</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="actions">
-    <h2>Actions Nationales</h2>
-    <p>Joseph Yule œuvre pour le progrès social, l’éducation, la santé et la cohésion communautaire à travers la RDC.</p>
-  </section>
-
-  <section id="galerie" class="gallery">
-    <h2>Galerie Photos</h2>
-    <img src="https://lh3.googleusercontent.com/pw/AP1GczO_AUSOk0VnL34_UCh932sMxbVQx6uB9u2eaAPkZ2lOevBteAS01Y8c8uiGJmQJdBJnsWIFb-bvo7603ESwYVQT1_JOhVgBh0AXYJHBvEH6DiUMXL4=w48-h72-no" alt="Joseph Yule 1">
-    <img src="https://lh3.googleusercontent.com/pw/AP1GczNGGQlBOS6OfSrrvnx4hJtx0ppb66iD91gzo2PJurXOs1OMpQRmtJKeIAnqowYHiBWqZndWum7LHBvJhDwB1icu2IOpD3uSDJl9JSFt45sfoPeOoDE=w107-h72-no" alt="Joseph Yule 2">
-    <img src="https://lh3.googleusercontent.com/pw/AP1GczOiARssoW2x9qOZLOgBAmGSskOQ9Ze6R9vQ7IYZ_dVNnOU-QsuJ0RyOdXRnPwda2dKKG_BwRmRjf07TfGkUSINMjma8Kr5JK7J8aJGJeKFShn7QG3A=w69-h72-no" alt="Joseph Yule 3">
-  </section>
-
-  <section id="videos">
-    <h2>Vidéos Officielles</h2>
-    <video controls>
-      <source src="videos/yule-discours.mp4" type="video/mp4">
-      Votre navigateur ne supporte pas la vidéo.
-    </video>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <form action="https://api.web3forms.com/submit" method="POST">
-      <input type="hidden" name="access_key" value="e032e789-7a9f-4b52-9ca0-91e838645ab9" />
-      <label for="name">Nom:</label><br>
-      <input type="text" id="name" name="name" required><br><br>
-
-      <label for="email">Email:⁽¹⁾</
+    <!-- Activités Section -->
+    <section id="activites" class="section activities">
+        <div class="container">
+            <h2 cla
